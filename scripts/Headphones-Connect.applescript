@@ -7,7 +7,7 @@ tell application "System Events" to tell process "SystemUIServer"
 			if exists menu item "Connect" then
 				click menu item "Connect"
 			else
-				click bt -- close main dropdown to clean up after ourselves
+				click bt -- clean-up: click the Bluetooth icon again to close the menu
 			end if
 		end tell
 	end tell

@@ -13,7 +13,7 @@ tell application "System Events" to tell process "SystemUIServer"
 	end tell
 end tell
 
-delay 3 -- hang out for a bit before re-connecting
+delay 5 -- hang out for a bit before re-connecting
 
 tell application "System Events" to tell process "SystemUIServer"
 	set bt to (first menu bar item whose description is "bluetooth") of menu bar 1
